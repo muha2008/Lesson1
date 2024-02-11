@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="26dp"
+        android:orientation="vertical"
+        android:gravity ="center_horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            >
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите имя"
+            android:textColorHint="@color/Skyblue" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:hint="Пароль"
+            android:textColorHint="@color/Skyblue" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Skyblue"
+            android:text="Remember me" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="230dp"
+            app:cornerRadius="15dp"
+            android:layout_height="60dp"
+            android:text="Вход"
+            android:backgroundTint="@color/Red"/>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
